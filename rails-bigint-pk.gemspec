@@ -5,8 +5,8 @@ require "bigint_pk/version"
 Gem::Specification.new do |s|
   s.name        = "rails-bigint-pk"
   s.version     = BigintPk::VERSION
-  s.authors     = ["David J. Hamilton"]
-  s.email       = ["github@hjdivad.com"]
+  s.authors     = ["7 hills"]
+  s.email       = ["yedukondalareddy@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Easily use 64-bit primary keys in rails}
   s.description = %q{Easily use 64-bit primary keys in rails}
@@ -18,9 +18,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "activerecord", '~> 3.2.0'
-  s.add_runtime_dependency "railties", '~> 3.2.0'
-
+  s.add_runtime_dependency "activerecord", '>= 4.0'
+  s.add_runtime_dependency "railties", '>= 4.0'
   s.add_development_dependency "rspec"
   s.add_development_dependency "travis-lint"
   s.add_development_dependency "rails"

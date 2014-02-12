@@ -40,7 +40,7 @@ RSpec.configure do |c|
                         "#{RailsDir}/#{dir}"
       end
 
-      run "bundle install --binstubs"
+     # run "bundle install --binstubs"
       run "git init && git add . && git commit -m 'Root'"
     end
   end
